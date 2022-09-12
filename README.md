@@ -1,17 +1,32 @@
-# Solvent-accessible surface area (SASA) of a protein 
+# SASA 
+This program aims to calculate the Solvent-Accessible Surface Area (SASA) of a protein.
 
-## Setup your environment
+## Setup your environment 
 
 Clone the repository: 
 
 ```bash
-git clone https://github.com/souadyoujilabadi/projects.git
+git clone https://github.com/souadyoujilabadi/SASA_project.git
+```
+
+Move to the new directory:
+
+```bash
+cd SASA_project
+```
+
+Install [anaconda](https://www.anaconda.com/products/distribution).
+
+Install [mamba](https://github.com/mamba-org/mamba):
+
+```bash
+conda install mamba -n base -c conda-forge
 ```
 
 Create the `SASA` conda environment: 
 
 ```
-conda env create -n env_SASA --file environment.yml 
+mamba env create --file environment.yml
 ```
 
 Load the `SASA` conda environment:
@@ -26,19 +41,13 @@ To deactivate an active environment, use:
 conda deactivate 
 ```
 
-#conda remove -n env_SASA --all
-#conda env list
-
-
-
-#conda env export -n env_SASA --no-builds | grep -v "^prefix:" > environment.yml  
-
-
-
 Example of use: 
-python3 SASA.py -pdb "1bzv.pdb" -n 1000
+
+```bash
+python3 SASA.py -pdb data/pdb/1bzv.pdb -n 92
+```
 
 Results using this example and program: 
-Au mois avec cette example : moyenne
 
-Use already existing libraries 
+3749.25 ACCESSIBLE SURFACE OF PROTEIN (ANGSTROM**2)
+9.92 PERCENTAGE OF ACCESSIBILITY

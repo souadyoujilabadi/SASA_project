@@ -1,0 +1,14 @@
+name: env_SASA
+channels:
+  - defaults
+  - anaconda
+dependencies:
+  - python=3.10
+  - matplotlib
+  - numpy
+  - pandas
+  - tqdm
+  - joblib
+  - tabulate
+
+
