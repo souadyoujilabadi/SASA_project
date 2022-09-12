@@ -41,7 +41,7 @@ To deactivate an active environment, use:
 conda deactivate 
 ```
 
-# Example of use: 
+## Example of use
 
 ```bash
 python3 bin/SASA.py -pdb data/pdb/1bzv.pdb -n 92
