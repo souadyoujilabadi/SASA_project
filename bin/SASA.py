@@ -78,6 +78,7 @@ def SASA():  #The main.
                     
         dico[pos] = (name_res, num_res, round(s_exp_abs_res, 2), round(s_exp_rel_res, 2), round(perc_res, 2))  #In homodimers, residue names and numbers are the same in both chains. For this reason, pos (position) is used as key.
     
+    print(dico)
     headers = ["POS", "RES", "NUM", "S-ABS", "S-REL", "PERC"]
     print(tabulate([(k,) + v for k, v in dico.items()], headers=headers))
 
@@ -86,8 +87,8 @@ def SASA():  #The main.
     
     print(f"--- {(time.time() - start_time):.2f} seconds ---")  #Time taken for the program execution.
 
-#NB: The main has no return                   
-#Example of use : python3 SASA.py -pdb data/pdb/1bzv.pdb -n 92
+#NB: The main has no return.                  
+#Example of use : python3 bin/SASA.py -pdb data/pdb/1bzv.pdb -n 92
                       
                                        
 if __name__ == "__main__":  #If the program SASA.py is executed as a script in a shell, the result of the if test will be True and the corresponding instruction block will be executed.
