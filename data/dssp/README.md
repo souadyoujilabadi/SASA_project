@@ -3,7 +3,7 @@
 The accessible surface of protein estimated by the program DSSP is:
 
 ## 1bzv (Insulin analogue):
-
+ 
 3839.8 ACCESSIBLE SURFACE (Å**2) = ACC of 46 amino acids + molecule X (HETATM)
 
 ## 1rex (Lysozyme):
