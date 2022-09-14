@@ -49,6 +49,7 @@ python3 bin/SASA.py -pdb data/pdb/1bzv.pdb -n 92
 
 Results using this example and program: 
 
-3749.25 ACCESSIBLE SURFACE OF PROTEIN (ANGSTROM**2)
+3749.31 ACCESSIBLE SURFACE OF PROTEIN (ANGSTROM**2)
 
 9.92 PERCENTAGE OF ACCESSIBILITY
+
